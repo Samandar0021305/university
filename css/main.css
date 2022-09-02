@@ -1,9 +1,21 @@
+
+@font-face {
+    font-family: "Inter-bold";
+    src: url("../fonts/Inter-Bold.ttf");
+}
+@font-face {
+    font-family: "Inter-regular";
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
     padding: 0;
+    font-family: "Inter-bold";
+    font-family: "Inter-regular";
 }
 ul,li{
     list-style: none;
@@ -12,3 +24,46 @@ a{
     text-decoration: none;
 }
 
+
+.navbar{
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.navbar__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.navbar__link{
+    font-family: "Inter-bold";
+    color: black;
+    display: flex;
+    transition: 0,4s;
+    font-size: 16px;
+}
+.navbar__title{
+    display: flex;
+    width: 100%;
+}
+.navbar__hover{
+    display: flex;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease-in-out;
+}
+
+.navbar__link:hover ~ .navbar__hover{
+    width: 100%;
+}
+
+
+.navbar__link:hover{
+    color: #000;
+    opacity: 0.7;
+}
