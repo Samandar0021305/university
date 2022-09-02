@@ -1,0 +1,14 @@
+@media (max-width:1000px){
+    .navbar__link{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:833px){
+    .navbar__list{
+        display: none;
+    }
+    .navbar__toogle{
+        display: flex;
+    }
+}
