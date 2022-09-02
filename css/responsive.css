@@ -20,6 +20,7 @@
     }
     .header__list{
         display: flex;
+        width: 100%;
         flex-direction: column-reverse;
     }
     .header__list .header__item{
@@ -44,11 +45,28 @@
         padding-right: 10px;
         padding-left: 10px;
     }
-    
+   
     .header__title{
         font-size: 25px;
     }
     .header--iframe{
         height: 250px;
     }
+}
+
+@media (max-width:400px){
+   .navbar{
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+   .header{
+    padding-left: 5px;
+    padding-right: 5px;
+   }
+   .header--iframe{
+    width: 100%;
+   }
+   .header__item{
+    width: 100%;
+   }
 }
